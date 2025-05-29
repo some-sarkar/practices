@@ -48,7 +48,7 @@ public class GroupByDepartment {
         Map<String, List<Person>> listMap;
         listMap = persons.stream().collect(Collectors.groupingBy(Person::getDepartment));
         System.out.println(listMap);
-        HashMap
+
     }
 
 
