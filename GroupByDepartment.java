@@ -1,9 +1,11 @@
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 class Person{
     private String name;
@@ -46,6 +48,7 @@ public class GroupByDepartment {
         Map<String, List<Person>> listMap;
         listMap = persons.stream().collect(Collectors.groupingBy(Person::getDepartment));
         System.out.println(listMap);
+        HashMap
     }
 
 
