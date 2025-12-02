@@ -1,12 +1,26 @@
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
-public class Test {
+interface A{
+
+    public default void show(){
+        System.out.println("interface");
+    }
+}
+abstract class B{
+    public void show(){
+        System.out.println("abstract");
+    }
+}
 
 
-    public static void main(String... args){
-        List<Integer> list = Arrays.asList(1,2,3,4,5);
-        System.out.println(list.stream().reduce(2, (a,b)->a*b));;
+
+public class Test extends  B implements A {
+
+
+    public static  void main(String... args){
+        Test t = new Test();
+        t.show();
     }
 
 

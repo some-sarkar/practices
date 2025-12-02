@@ -18,8 +18,8 @@ public class MainClass {
         List<Employee> employeeList= Arrays.asList(emp1, emp2, emp3, emp4, emp5);
 
         //employeeList.sort((e1, e2) -> e2.getSalary()-e1.getSalary());
-        //employeeList.sort((e1, e2) -> e2.getName().compareToIgnoreCase(e1.getName()));
-        employeeList.sort((e1, e2) -> e1.getName().length()-e2.getName().length());
+        employeeList.sort((e1, e2) -> e2.getName().compareToIgnoreCase(e1.getName()));
+        //employeeList.sort((e1, e2) -> e1.getName().length()-e2.getName().length());
 
         System.out.println(employeeList);
 
